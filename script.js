@@ -11,11 +11,13 @@ function clickButton(e) {
 function addTodo() {
     const itemall = document.createElement('div')
     itemall.classList.add('itemall')
+    // adds the text panels
 
+    // add items in text-panels
     const item = document.createElement('p')
     item.classList.add('item')
     item.innerText = inputtdl.value
-    itemall.appendChild(item)
+    itemall.appendChild(item) //adds items to field
 
     if (inputtdl.value === '') return
 
