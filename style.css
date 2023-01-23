@@ -181,6 +181,11 @@ button, .check-button, .trash-button {
 }
 
 /* start text area */
+button {
+    width: 5em;
+    height: 3em;
+}
+
 section {
     display: flex;
     align-items: center;
@@ -217,3 +222,7 @@ section {
     border-radius: 20px;
     border: none;
 }
+
+/* .addlist {
+    display: none;
+} */

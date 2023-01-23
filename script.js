@@ -54,3 +54,7 @@ function okdel(e) {
 
 buttontdl.addEventListener('click', clickButton)
 listtdl.addEventListener('click', okdel)
+
+function openList() {
+    document.getElementById('addList').style.display= "none"
+}
