@@ -181,11 +181,15 @@ button, .check-button, .trash-button {
 }
 
 /* start text area */
-
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .addlist {
     width: 60%;
     height: 3rem;
-    background-color: pink;
+    background-color: white;
     border-radius: 20px;
 }
 
@@ -193,8 +197,23 @@ button, .check-button, .trash-button {
     width: 100%;
     height: 3rem;
     border-radius: 15px;
+    font-size: 20px;
     border: none;
-    font-size: 30px;
-    outline: none;
+    padding: 10px 10px;
 }
 
+
+.inputbar {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 100% 30%;
+    justify-content: center;
+    
+}
+
+.add-btn {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 20px;
+    border: none;
+}
