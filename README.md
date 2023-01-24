@@ -1,5 +1,8 @@
 # To-do-list
-Web page
+Web page</br>
+* Html
+* Css
+* Javascript
 
 <h2>Demo Link:</h2>
 https://web-to-do-listy.netlify.app/
