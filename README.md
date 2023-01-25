@@ -11,7 +11,7 @@ https://web-to-do-listy.netlify.app/
 Organize your tasks with this accessible to-do list, In this project we created a</br> Todo list web app using HTML, CSS AND JAVASCIPT.</br>
 It allows items to be added and deleted from the list and items can be checked off as done. 
 
-Overview</br>
+<h2>Overview</h2>
 * List container
 * TextArea
 * Javascript
