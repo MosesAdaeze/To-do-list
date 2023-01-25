@@ -223,6 +223,11 @@ section {
     border: none;
 }
 
-/* .addlist {
-    display: none;
-} */
+@media (min-width: 1000px) {
+    .inputbar {
+        grid-template-columns: 100% 20%;
+    }
+    .addlist {
+        width: 45%;
+    }
+}
