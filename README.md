@@ -12,6 +12,6 @@ Organize your tasks with this accessible to-do list, In this project we created 
 It allows items to be added and deleted from the list and items can be checked off as done. 
 
 <h2>Overview</h2>
-* List container
-* TextArea
-* Added list items
+* List container</br>
+* TextArea</br>
+* Added list items</br>
