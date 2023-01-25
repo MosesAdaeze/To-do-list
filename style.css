@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,11 +7,10 @@
 
 body {
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgb(226, 221, 221),
-     rgb(55, 55, 100),rgb(61, 61, 136));
+    background-image: linear-gradient(to right, #605e7e, #6b73c1, #37b3cc);
 }
 
-section {
+main {
     display: flex;
     justify-content: center;
     padding-top: 270px;
@@ -45,18 +44,6 @@ section {
     background-color: palevioletred;
     border-radius: 30px;
     border: none;
-} */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-body {
-    background-image: linear-gradient(to right, #605e7e, #6b73c1, #37b3cc);
-    margin: 50px 2%;
 }
 
 /* container title */
