@@ -191,7 +191,9 @@ section {
     align-items: center;
     justify-content: center;
 }
+
 .addlist {
+    /* display: none; */
     width: 60%;
     height: 3rem;
     background-color: white;
@@ -230,4 +232,8 @@ section {
     .addlist {
         width: 45%;
     }
+}
+
+section {
+    display: none;
 }
