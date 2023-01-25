@@ -15,3 +15,4 @@ It allows items to be added and deleted from the list and items can be checked o
 * List container</br>
 * TextArea</br>
 * Added list items</br>
+* Delete button
