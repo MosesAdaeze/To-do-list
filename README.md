@@ -1,5 +1,5 @@
 # To-do-list
-Web page</br>
+Webpage</br>
 * Html
 * Css
 * Javascript
