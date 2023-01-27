@@ -7,118 +7,165 @@
 
 body {
     height: 100vh;
-    background-image: linear-gradient(to right, #605e7e, #6b73c1, #37b3cc);
+    background-image: linear-gradient(to right, #7e79c2, #424879, #4b8f9c);
+    display: flex;
+    justify-content: center;
+    height: 650px;
+    margin-top: 150px;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    padding-top: 270px;
-}
-
-.todo-list-container{
-    width: 27rem;
-    height: 35rem;
-    background: #ffffff;
-    border-radius: 8px;
+    width: 460px;
+    background: palevioletred;
     box-shadow: 20px 20px 20px rgba(0,0,0,0.09),
-              -20px -20px 20px rgba(0,0,0,0.09);
-    padding: 0 10px;
+               -20px -20px 20px rgba(0,0,0,0.09);
+    border-radius: 10px;
 }
 
-.todo-list-content h2{
-    font-family: 'Poppins',sans-serif;
+h1{
+    padding-top: 1px;
+    font-family: bruce forever;
     text-align: center;
-    padding: 1em;
+    color: white;
 }
 
-.todo-list-content div{
-    padding-top: 400px;
-    display: flex;
-    justify-content: center;
+u {
+    color: white;
 }
 
-.todo-list-content button {
-    width: 60px;
+
+.button {
+    margin-top: 10px;
+    margin-left: 200px;
+    /* position: fixed; */
+}
+
+.button button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    width: 50px;
     height: 50px;
-    background-color: palevioletred;
+    color: palevioletred;
+    background-image: url(/image/logo.png);
+    background-position: center;
+    background-size: cover;
     border-radius: 30px;
     border: none;
+    cursor: pointer;
 }
 
-/* container title */
-.container-title {
-    font-size: 25px;
-    text-align: center;
-    margin: 0 0 30px 0;
-    color: white;
-    text-shadow: 3px 1px black;
+.button button:hover {
+    border: solid palevioletred;
+    font-size: 15px;
+    font-weight: 900;
 }
 
 /* container */
-.inputcol {
-    display: grid;
-    column-gap: 5px;
-    grid-template-columns: 60% 10%;
-    justify-content: center;
-    margin-top: 10px;
+
+.new {
+    margin-top: 15px;
 }
 
-.textarea {
-    min-height: 50px;
-    height: 50px;
-    max-width: 100%;
-    min-width: 100%;
-    border-radius: 10px;
-    border-color: #333;
-    font-size: 20px;
-    padding: 10px 10px;
-    overflow: auto;
-    overflow-x: hidden;
-}
-
-.textarea::-webkit-scrollbar-track {
+textarea::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #333;
 }
 
-.textarea::-webkit-scrollbar {
+textarea::-webkit-scrollbar {
     width: 10px;
     cursor: pointer;
 }
 
-.textarea::-webkit-scrollbar-thumb {
+textarea::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #8f8acc;
     cursor: pointer;
 }
 
-.textarea:focus {
+textarea:focus {
     outline: none;
 }
 
-.buttoninput {
-    border-radius: 10px;
-    border-color: #333;
-    background-color: white;
-    font-size: 20px;
-}
 
-.buttoninput:hover {
-    background-color: #8f8acc;
-    color: white;
-}
+/* start text area */
 
-/* js */
-.todolist {
-    margin-top: 20px;
-}
 
-.itemall {
-    display: grid;
-    grid-template-columns: 60% 5% 5%;
+section {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    box-shadow: -20px 20px 20px rgba(0,0,0,0.09),
+               -20px -20px 20px rgba(0,0,0,0.09);
+               border: none;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 2px;
+    -webkit-animation: fadeIn 1.2s ease-in-out;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+
+.addlist {
+    width: 60%;
+    height: 3rem;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.text-box {
+    width: 100%;
+    height: 3rem;
+    background-color: #d8dcf8;
+    border-radius: 15px;
+    font-size: 20px;
+    border: none;
+    padding: 10px 10px;
+}
+
+.inputbar {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 100% 30%;
+    justify-content: center;
+    
+}
+
+.add-btn {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #d6f1f7;
+}
+
+@media (min-width: 1000px) {
+    .inputbar {
+        grid-template-columns: 100% 20%;
+    }
+    .addlist {
+        width: 45%;
+    }
+}
+
+section {
+    display: none;
+}
+
+/* list item area */
+
+.itemlist {
+    display: grid;
+    grid-template-columns: 80% 8% 8%;
+    justify-content: center;
+    margin-bottom: 3px;
+    /* box-shadow: -20px 20px 20px rgba(0,0,0,0.06),
+                -20px -20px 20px rgba(0,0,0,0.06); */
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+    border: none;
 }
 
 .item, .check-button, .trash-button {
@@ -126,6 +173,22 @@ main {
     background-color: white;
     min-height: 50px;
     padding: 10px 10px;
+}
+
+.check-button{
+    background-color: rebeccapurple;
+    background-image: url(/image/logo.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 10px 10px 10px;
+}
+
+.trash-button {
+    background-color: green;
+    background-image: url(/image/logo.png);
+    background-position: center;
+    background-size: cover;
+    /* border-radius: 15px; */
 }
 
 .item {
@@ -142,16 +205,18 @@ main {
 }
 
 .trash-button {
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 10px;
 }
 
 .check-button:hover {
-    background-color: #37b3cc;
+    border: solid red;
+    /* background-color: #37b3cc; */
     color: white;
 }
 
 .trash-button:hover {
-    background-color: #6b73c1;
+    border: solid green;
+    /* background-color: #6b73c1; */
     color: white;
 }
 
@@ -159,69 +224,11 @@ main {
     text-decoration: line-through;
 }
 
+
 .fa-check, .fa-trash {
     pointer-events: none;
 }
 
-button, .check-button, .trash-button {
+.add-btn, .check-button, .trash-button {
     cursor: pointer;
-}
-
-/* start text area */
-button {
-    width: 5em;
-    height: 3em;
-}
-
-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.addlist {
-    /* display: none; */
-    width: 60%;
-    height: 3rem;
-    background-color: white;
-    border-radius: 20px;
-}
-
-.text-box {
-    width: 100%;
-    height: 3rem;
-    border-radius: 15px;
-    font-size: 20px;
-    border: none;
-    padding: 10px 10px;
-}
-
-
-.inputbar {
-    display: grid;
-    column-gap: 10px;
-    grid-template-columns: 100% 30%;
-    justify-content: center;
-    
-}
-
-.add-btn {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 20px;
-    border: none;
-}
-
-@media (min-width: 1000px) {
-    .inputbar {
-        grid-template-columns: 100% 20%;
-    }
-    .addlist {
-        width: 45%;
-    }
-}
-
-section {
-    display: none;
 }

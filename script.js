@@ -1,6 +1,6 @@
-const inputtdl = document.querySelector('.textarea')
-const buttontdl = document.querySelector('.buttoninput')
-const listtdl = document.querySelector('.todolist')
+const inputarea = document.querySelector('.text-box')
+const addbutton = document.querySelector('.add-btn')
+const listtdl = document.querySelector('.new')
 
 function clickButton(e) {
     e.preventDefault()
@@ -9,30 +9,39 @@ function clickButton(e) {
 
 // adding todoList
 function addTodo() {
-    const itemall = document.createElement('div')
-    itemall.classList.add('itemall')
+    const itemlist = document.createElement('new')
+    itemlist.classList.add('itemlist')
     // adds the text panels
 
     // add items in text-panels
     const item = document.createElement('p')
     item.classList.add('item')
-    item.innerText = inputtdl.value
-    itemall.appendChild(item) //adds items to field
+    item.innerText = inputarea.value
+    itemlist.appendChild(item) //adds items to field
 
-    if (inputtdl.value === '') return
+    if (inputarea.value === '') {
+        if (inputarea.value == '') 
+        inputarea.value = "uiufiuiufiu"
+        else {
+            checkbutton.style.display= "none"
+        }
+        return
+    }
 
-    const checkbutton = document.createElement("button")
+    const checkbutton = document.createElement("btn")
+    inputarea.value = "ulhawuifhiuwf"
     checkbutton.innerHTML = '<i class="fa-solid fa-check"></i>'
     checkbutton.classList.add("check-button")
-    itemall.appendChild(checkbutton)
+    itemlist.appendChild(checkbutton)
+    document.getElementById('addList').style.display= "none"
 
-    const trashbutton = document.createElement("button")
+    const trashbutton = document.createElement("btn")
     trashbutton.innerHTML = '<i class="fa-solid fa-trash"></i>'
     trashbutton.classList.add("trash-button")
-    itemall.appendChild(trashbutton)
+    itemlist.appendChild(trashbutton)
 
-    listtdl.appendChild(itemall)
-    inputtdl.value = ''
+    listtdl.appendChild(itemlist)
+    inputarea.value = ''
 }
 
 // checking and delete todoList 
@@ -53,7 +62,7 @@ function okdel(e) {
 }
 
 
-buttontdl.addEventListener('click', clickButton)
+addbutton.addEventListener('click', clickButton)
 listtdl.addEventListener('click', okdel)
 
 function openList() {
