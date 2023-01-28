@@ -1,6 +1,8 @@
 const inputarea = document.querySelector('.text-box')
 const addbutton = document.querySelector('.add-btn')
 const listtdl = document.querySelector('.new')
+// const closetextarea =document.getElementById('cancelbutton')
+// const checkButton = document.querySelector('.add')
 
 function clickButton(e) {
     e.preventDefault()
@@ -19,17 +21,21 @@ function addTodo() {
     item.innerText = inputarea.value
     itemlist.appendChild(item) //adds items to field
 
+    // const checkButton = document.createElement('btn')
+
     if (inputarea.value === '') {
-        if (inputarea.value == '') 
-        inputarea.value = "uiufiuiufiu"
-        else {
-            checkbutton.style.display= "none"
-        }
+        alert("Please input an item")
+        // inputarea.innerText = 'Can you click me?'
+        // inputarea.value = 'Can you click me?'
         return
-    }
+}
 
     const checkbutton = document.createElement("btn")
-    inputarea.value = "ulhawuifhiuwf"
+    // if (document.querySelector.value('.textbox') === "go") {
+    //     // checkbutton.disabled = true; //button remains disabled
+    // } else{
+    //     checkbutton.disabled = false; //button is enabled
+    // }
     checkbutton.innerHTML = '<i class="fa-solid fa-check"></i>'
     checkbutton.classList.add("check-button")
     itemlist.appendChild(checkbutton)
@@ -68,3 +74,18 @@ listtdl.addEventListener('click', okdel)
 function openList() {
     document.getElementById('addList').style.display= "flex"
 }
+
+// const checkButton = document.createElement('btn')
+
+// if (inputarea.value === '') {
+//     if (inputarea.value == '') {
+//     inputarea.value = "uiufiuiufiu"
+//     document.getElementById('bttn').disabled = "true"
+//     }else {
+//     document.getElementById('bttn').enabled = "false"
+// }
+//     // function startCombine(checkButton) {
+//     //     checkButton.disabled = "true"
+//     // }
+//     return
+// }
