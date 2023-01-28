@@ -25,8 +25,6 @@ function addTodo() {
 
     if (inputarea.value === '') {
         alert("Please input an item")
-        // inputarea.innerText = 'Can you click me?'
-        // inputarea.value = 'Can you click me?'
         return
 }
 
@@ -75,6 +73,7 @@ function openList() {
     document.getElementById('addList').style.display= "flex"
 }
 
+// TEXT NOTE
 // const checkButton = document.createElement('btn')
 
 // if (inputarea.value === '') {
